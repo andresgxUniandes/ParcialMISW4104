@@ -1,0 +1,21 @@
+<div class="plant-list">
+  <h2>Lista de Plantas</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Tipo</th>
+        <th>Clima</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let plant of plants">
+        <td>{{plant.id}}</td>
+        <td>{{plant.nombre}}</td>
+        <td>{{plant.tipo}}</td>
+        <td>{{plant.clima}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
