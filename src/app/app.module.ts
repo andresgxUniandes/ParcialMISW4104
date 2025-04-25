@@ -8,16 +8,16 @@ import { PlantListComponent } from './plants/plant-list/plant-list.component';
 
 @NgModule({
   declarations: [		
-    AppComponent, // aquí van los componentes que pertenecen a este módulo
+    AppComponent,
     PlantListComponent
    ],
   imports: [
-    BrowserModule, // módulos que quieres importar, como FormsModule, HttpClientModule, etc.
+    BrowserModule,
     AppRoutingModule,
   ],
   providers: [
     provideHttpClient(),
-    provideClientHydration()], // servicios disponibles a nivel del módulo
-  bootstrap: [AppComponent] // el componente que se carga primero
+    provideClientHydration()], 
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
